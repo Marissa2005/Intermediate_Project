@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="shortcut icon" href="/favicon.png" />
+    <link rel="manifest" href="app.webmanifest">
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    />
+    <title>StoriesApp</title>
+
+    <script src="/scripts/pages/login/login-model.js"></script>
+    <script type="module" src="/scripts/index.js"></script>
+  </head>
+  <body>
+    <header>
+      <a href="#main-content" class="skip-link">Skip to Content</a>
+      <div class="main-header container">
+        <h1 class="brand-name"><a href="#/">StoriesApp</a></h1>
+
+        <nav id="navigation-drawer" class="navigation-drawer">
+          <ul id="nav-list" class="nav-list">
+            <li>
+              <button id="drawer-button" aria-label="Toggle navigation menu">
+                ☰
+              </button>
+            </li>
+            <li><a href="#/">Beranda</a></li>
+            <li><a href="#/about">About</a></li>
+            <li><a href="#/add-new-story">Add New Story</a></li>
+            <li><a href="#/login" id="login-link">Login</a></li>
+            <li><a href="#/register" id="register-link">Register</a></li>
+            <li><a href="#/liked" class="nav-link">Like❤️</a></li>
+            <li><button id="enable-notif-button" class="notif-button">🔔 Aktifkan Notifikasi</button></li>
+            <li><button id="disable-notif-button" class="notif-button hidden">🔕 Nonaktifkan Notifikasi</button></li>
+            <li>
+              <button
+                id="logout-button"
+                style="
+                  color: #ca7842;
+                  font-size: 20px;
+                  background: none;
+                  border: none;
+                  cursor: pointer;
+                "
+              >
+                ↩️ Logout
+              </button>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content" class="main-content" tabindex="-1"></main>
+
+    <footer>
+      <p>&copy; 2025 StoriesApp. All rights reserved.</p>
+    </footer>
+
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      defer
+    ></script>
+    <div id="notification" class="notification hidden"></div>
+  </body>
+</html>

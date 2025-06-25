@@ -1,0 +1,2 @@
+APP_URL=https://graceful-phoenix-a29b57.netlify.app/
+MAP_SERVICE_API_KEY=<api_key>
